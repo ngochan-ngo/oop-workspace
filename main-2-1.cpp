@@ -4,6 +4,6 @@ extern void hexDigits(int *, int);
 extern int* readNumbers();
 
 int main() {
-    int array[4] = {11,2,3,4};
-    hexDigits(array, 4);
+    int *a = readNumbers();
+    hexDigits(a, 4);
 }
