@@ -1,8 +1,10 @@
 #include <iostream>
 
+extern int* readNumbers();
 extern void printNumbers(int *, int);
 
 int main() {
-    int array[] = {1,2,4,8};
-    printNumbers(array, 4);
+    int *a = readNumbers();
+    printNumbers(a, 10);
+    delete[] a;
 }
