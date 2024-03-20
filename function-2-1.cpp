@@ -30,8 +30,3 @@ void hexDigits(int *numbers, int length) {
         std::cout << i << " " << numbers[i] << " " << hex;
     }
 }
-
-int main() {
-    int array[4] = {1,2,3,4};
-    hexDigits(array, 4);
-}
