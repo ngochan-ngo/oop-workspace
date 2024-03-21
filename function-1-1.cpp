@@ -6,10 +6,8 @@ Person* createPersonArray(int n) {
 Person* PersonArray = new Person[n];
 
     for (int i =  0; i < n; i++) {
-        for (int j =  0; j < 2; j++) {
-            PersonArray[i].name = "John Doe";
-            PersonArray[i].age = 0;
-        } 
+        PersonArray[i].name = "John Doe";
+        PersonArray[i].age = 0;
     }
     return PersonArray;
 }
