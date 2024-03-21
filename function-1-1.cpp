@@ -1,11 +1,6 @@
 #include <iostream>
 #include "Person.h"
 
-struct Person {
-    std::string name;
-    int age;
-};
-
 Person* createPersonArray(int n) {
 
 Person* PersonArray = new Person[n];
