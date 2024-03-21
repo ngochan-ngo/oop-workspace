@@ -18,8 +18,3 @@ Person* PersonArray = new Person[n];
     }
     return PersonArray;
 }
-
-int main() {
-    Person* arr = createPersonArray(10);
-    delete[] arr;
-}
