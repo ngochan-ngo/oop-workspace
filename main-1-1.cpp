@@ -1,8 +1,9 @@
 #include <iostream>
+#include <Person.h>
 
-extern void printNumbers(int *, int);
+extern Person* createPersonArray(int);
 
 int main() {
-    int array[] = {1,2,4,8};
-    printNumbers(array, 4);
+    Person* arr = createPersonArray(10);
+    delete[] arr;
 }

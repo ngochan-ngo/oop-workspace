@@ -1,12 +1,25 @@
 #include <iostream>
+#include <Person.h>
 
-void printNumbers(int *numbers,int length) {
-    for (int i = 0; i < length; i++) {
-        std::cout << i << " " << numbers[i] << "\n";
+struct Person {
+    std::string name;
+    int age;
+};
+
+Person* createPersonArray(int n) {
+
+Person* PersonArray = new Person[n];
+
+    for (int i =  0; i < n; i++) {
+        for (int j =  0; j < 2; j++) {
+            PersonArray[i].name = "John Doe";
+            PersonArray[i].age = 0;
+        } 
     }
+    return PersonArray;
 }
 
 int main() {
-    int array[] = {1,2,4,8};
-    printNumbers(array, 4);
+    Person* arr = createPersonArray(10);
+    delete[] arr;
 }
