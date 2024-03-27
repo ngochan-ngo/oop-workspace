@@ -17,15 +17,11 @@ private:
 
 public:
     Musician();
-    
+
+    Musician(std::string instrument, int experience);
+
     std::string instrument;
     int experience;
-
-
-    Musician(std::string instrument, int experience) {
-    // std::string instrument = "null";
-    // int experience = 0;
-    }
 
     std::string get_instrument() {return instrument;}
     int get_experience() {return experience;}

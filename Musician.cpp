@@ -2,13 +2,15 @@
 #include "Musician.h"
 
 int main() {
-Musician::Musician();
+Musician::Musician(); {
+    std::string instrument = "null";
+    int experience = 0;
+}
+
 
 Musician::Musician(std::string instrument, int experience);
 
-Musician m1;
-m1.instrument = "guitar";
-m1.experience = 11;
+
 
 std::string Musician::get_instrument();
 
