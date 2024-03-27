@@ -2,9 +2,9 @@
 #include "Musician.h"
 
 int main() {
-Musician::Musician()
+Musician::Musician();
 
-Musician::Musician(std::string instrument, int experience)
+Musician::Musician(std::string instrument, int experience);
 
 Musician m1;
 m1.instrument = "guitar";
