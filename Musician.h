@@ -5,6 +5,7 @@
 
 class Musician {
 private:
+    /*
     std::string favInstrument;
     std::string favComposer;
     int age;
@@ -12,6 +13,7 @@ private:
     std::string get_favInstrument() {return favInstrument;}
     std::string favComposer() {return favComposer;}
     int get_age() {return age;}
+    */
 
 public:
     Musician();
@@ -21,8 +23,8 @@ public:
 
 
     Musician(std::string instrument, int experience) {
-    std::string instrument = "null";
-    int experience = 0;
+    // std::string instrument = "null";
+    // int experience = 0;
     }
 
     std::string get_instrument() {return instrument;}
